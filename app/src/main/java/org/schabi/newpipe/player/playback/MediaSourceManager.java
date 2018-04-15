@@ -15,12 +15,12 @@ import org.schabi.newpipe.player.mediasource.FailedMediaSource;
 import org.schabi.newpipe.player.mediasource.LoadedMediaSource;
 import org.schabi.newpipe.player.mediasource.ManagedMediaSource;
 import org.schabi.newpipe.player.mediasource.PlaceholderMediaSource;
-import org.schabi.newpipe.playlist.PlayQueue;
-import org.schabi.newpipe.playlist.PlayQueueItem;
-import org.schabi.newpipe.playlist.events.MoveEvent;
-import org.schabi.newpipe.playlist.events.PlayQueueEvent;
-import org.schabi.newpipe.playlist.events.RemoveEvent;
-import org.schabi.newpipe.playlist.events.ReorderEvent;
+import org.schabi.newpipe.playqueue.PlayQueue;
+import org.schabi.newpipe.playqueue.PlayQueueItem;
+import org.schabi.newpipe.playqueue.events.MoveEvent;
+import org.schabi.newpipe.playqueue.events.PlayQueueEvent;
+import org.schabi.newpipe.playqueue.events.RemoveEvent;
+import org.schabi.newpipe.playqueue.events.ReorderEvent;
 import org.schabi.newpipe.util.ServiceHelper;
 
 import java.util.Collections;
@@ -39,7 +39,7 @@ import io.reactivex.functions.Consumer;
 import io.reactivex.internal.subscriptions.EmptySubscription;
 import io.reactivex.subjects.PublishSubject;
 
-import static org.schabi.newpipe.playlist.PlayQueue.DEBUG;
+import static org.schabi.newpipe.playqueue.PlayQueue.DEBUG;
 
 public class MediaSourceManager {
     @NonNull private final String TAG = "MediaSourceManager@" + hashCode();
